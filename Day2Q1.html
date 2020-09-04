@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to search for a particular character in a string</title>
+</head>
+<body>
+    <script>
+        let string = prompt("Enter a string");
+        let count = 0;
+        let set = prompt("Enter the character to be searched");
+        for(let i=0;i<string.length;i++){
+            if(set==string[i]){
+                document.write(set+"<br/>");
+                count++;
+            }
+        }
+        document.write("The number of occurences of character are : "+ count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to display only elements containing 'a' in them from an array</title>
+</head>
+<body>
+    <script>
+      var array1 = [];
+        let size = parseInt(prompt("Enter the size of array"));
+        let i;
+        for(i=0;i<size;i++){
+            array1[i] = prompt("Enter "+ (i+1)+ " string value");
+        }
+        document.write("The actual array is :"+ array1+"<br/>");
+        document.write("The element containing search variable 'a' are :"+"<br/>");
+        for(i = 0;i<size;i++){
+            if(array1[i].includes("a")){
+                document.write(array1[i]+"<br/>");
+            }
+        }
+    </script>
+</body>
+</html>

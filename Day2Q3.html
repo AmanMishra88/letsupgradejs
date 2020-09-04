@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to search for an element in an array of strings</title>
+</head>
+<body>
+    <script>
+        function findElement(a){
+            let strArray = ["Cricket","Hockey","Basket-ball","Soccer","Tennis","Table-tennis","Volley-ball"];
+            let i = 0;
+            while(i<strArray.length){
+                if(strArray[i]==a){
+                    document.write("Searched element found"+"<br/>");
+                }else{
+                    document.write("Not found"+"<br/>");
+                }
+            i++;
+            }
+            return(a);
+        }
+        let b = prompt("Enter the element to be searched");
+        document.write(findElement(b));        
+    </script>
+</body>
+</html>
